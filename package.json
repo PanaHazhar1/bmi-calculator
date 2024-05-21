@@ -16,14 +16,11 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --openssl-legacy-provider build",
+    "build": "react-scripts --openssl-legacy-provider start",
     "test": "react-scripts  test --watchAll=false --passWithNoTests",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
-    "report-coverage": "cat ./coverage/lcov.info | codecov",
-    "cypress": "cypress open"
+    "deploy": "gh-pages -d build"
+  
   },
   "jest": {
     "collectCoverageFrom": [
